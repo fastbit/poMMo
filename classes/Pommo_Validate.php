@@ -215,7 +215,7 @@ class Pommo_Validate
      *  NOTE: has the MAGIC FUNCTIONALITY of shortening value to 60 characters (or 255 if a comment type)
      *  TODO -> should fields be passed by reference? e.g. are they usually already available when subscriberData() is called?
      */
-    function subscriberData(&$in, $p = array())
+     public static function subscriberData(&$in, $p = array())
     {
         $defaults = array(
             'prune' => true,
